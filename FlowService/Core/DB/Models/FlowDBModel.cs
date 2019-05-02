@@ -26,7 +26,7 @@ namespace FlowService.Core.DB.Models
     public class Timeline
     {
         [BsonIgnoreIfNull]
-        public string tipo { get; set; }
+        public string tipo { get; set; } //El tipo de servicio o documento que es por ejemplo contactoService y debajo idTipo sera el id a buscar.
         [BsonIgnoreIfNull]
         public ObjectId idTipo { get; set; }
         [BsonIgnoreIfNull]
@@ -36,9 +36,9 @@ namespace FlowService.Core.DB.Models
         [BsonIgnoreIfNull]
         public string mensaje { get; set; }
         [BsonIgnoreIfNull]
-        public string ticket { get; set; }
+        public string ticket { get; set; } //ID del ticket
         [BsonIgnoreIfNull]
-        public bool visto { get; set; }
+        public bool visto { get; set; } // Marcado como visto por alguien Tengo muchisimas dudadas sobre esto por temas de que trabajador o persona lo marcará.
         [BsonIgnoreIfNull]
         public bool terminado { get; set; }
     }
